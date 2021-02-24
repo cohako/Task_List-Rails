@@ -1,4 +1,6 @@
 <h1>Task List</h1>
+<h3> Adicionar nova tarefa 
+<%= link_to 'Novo',new_task_path()%> </h3>
 <h4>Suas tarefas são: </h4>
 
 <%@tasks.each do |task|%>
@@ -9,3 +11,4 @@
   data: { confirm: 'Quer apagar está tarefa?' } %>
   <br>
 <%end%>
+
