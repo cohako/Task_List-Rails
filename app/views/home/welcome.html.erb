@@ -2,5 +2,10 @@
 <h4>Suas tarefas são: </h4>
 
 <%@tasks.each do |task|%>
-  <p> <%= task.description %> </p>
+  <%= task.description %> 
+  <!-- Caminho para editar o objeto em especifico-->
+  <%= link_to 'Editar', edit_task_path(task) %>
+  <%= link_to 'Apagar', task_path(task), method: :delete,
+  data: { confirm: 'Quer apagar está tarefa?' } %>
+  <br>
 <%end%>
