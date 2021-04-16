@@ -1,3 +1,3 @@
 # README
-Está é uma aplicação simplista onde foi estudado o básico de reails.
+Está é uma aplicação simplista onde foi estudado o básico de rails.
 
